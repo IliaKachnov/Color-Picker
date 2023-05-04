@@ -1,0 +1,67 @@
+@import url('reset.css');
+
+body {
+  font-family: 'Ysabeau', sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: gradient 1s ease infinite;
+  background-image: linear-gradient(45deg, #c52929, #bccb98, #4593e1);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  gap: 1.875rem;
+  flex-direction: column;
+  padding: 1.875rem;
+  border-radius: 30px;
+}
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+}
+.btn-spray {
+  cursor: default;
+}
+.bx-spray-can {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 1.875rem;
+  width: 25%;
+  font-size: 2.875rem;
+  transition: all .2s ease;
+}
+.bx-spray-can:active {
+  transform: scale(.9);
+}
+form input {
+  margin: 0 auto;
+}
+
+.preview {
+  max-width: 30vw;
+}
+.res {
+  font-size: 1.275rem;
+}
+.btn-copy {
+  margin-left: 10px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
